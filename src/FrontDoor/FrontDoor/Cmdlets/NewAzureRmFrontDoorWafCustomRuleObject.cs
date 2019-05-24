@@ -53,9 +53,9 @@ namespace Microsoft.Azure.Commands.FrontDoor.Cmdlets
         public PSMatchCondition[] MatchCondition { get; set; }
 
         /// <summary>
-        /// Type of Actions. Possible values include: 'Allow', 'Block', 'Log'
+        /// Type of Actions. Possible values include: 'Allow', 'Block', 'Log', 'Redirect'
         /// </summary>
-        [Parameter(Mandatory = true, HelpMessage = "Type of Actions. Possible values include: 'Allow', 'Block', 'Log'. ")]
+        [Parameter(Mandatory = true, HelpMessage = "Type of Actions. Possible values include: 'Allow', 'Block', 'Log', 'Redirect'. ")]
         [PSArgumentCompleter("Allow","Block","Log","Redirect")]
         public string Action { get; set; }
 
